@@ -97,11 +97,11 @@ $is_park_filter_checked = $_GET['park_filter'] ==! null ? true : false;
 </section>
 <script async>
   const form = document.getElementById('form');
-  const resetButton = document.getElementById('resetBtn')
+  const resetButton = document.getElementById('resetBtn');
 
-  resetButton.addEventListener("click", reset)
+  resetButton.addEventListener("click", resetForm);
 
-  function reset () {
+  function resetForm () {
     form.reset();
     form.submit();
   }
