@@ -102,6 +102,7 @@ $is_park_filter_checked = $_GET['park_filter'] ==! null ? true : false;
   resetButton.addEventListener("click", reset)
 
   function reset () {
+    form.reset();
     form.submit();
   }
 
